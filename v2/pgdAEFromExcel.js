@@ -54,7 +54,7 @@ workbook.xlsx.readFile(filename)
                 }
                 var conservacao = row.getCell(4).value
 
-                var agreg = wb.getWorksheet(indexSheet)
+                var agreg = wb.getWorksheet(indexSheet++)
                 agreg.eachRow(function(ag, agNumber) {
                     if(agNumber>1) {
                         //Invariante da data de Conservacao
