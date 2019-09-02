@@ -1,4 +1,98 @@
+### Autos de Eliminação
 
+###  http://jcr.di.uminho.pt/m51-clav#ae_2_DGLAB_2019
+:ae_2_DGLAB_2019 rdf:type owl:NamedIndividual ,
+                        :AutoEliminacao ;
+               :autoNumero "2/DGLAB/2019" ;
+               :autoDataAutenticacao "07/08/2019" ;
+               :temEntidadeResponsavel :ent_DGLAB ;
+               :autoResponsavel "Silvestre Lacerda" ;
+               :temLegislacao :leg_LGkeKP2Uiwt4i96Jt_XHG ;
+               :codigo "500.10.602" ;
+               :autoDataInicio "2000" ;
+               :autoDataFim "2013" ;
+               :temAgregacao :as_VT_D_1_2000 ;
+               :temAgregacao :as_VT_P_2_2000 ;
+               :temAgregacao :as_VT_D_3_2000 ;
+               :autoNumero "2/DGLAB/2019" .
+                
+###  http://jcr.di.uminho.pt/m51-clav#as_VT_D_1_2000
+:as_VT_D_1_2000 rdf:type owl:NamedIndividual ,
+                             :Agregacao ;
+                    :agregacaoCodigo "VT_D/1/2000" ;
+                    :agregacaoTitulo "VT_D/1/2000" ;
+                    :temNI :vc_naturezaIntervencao_dono ;
+                    :agregacaoDataContagem "VT_D/1/2000" .
+                    
+###  http://jcr.di.uminho.pt/m51-clav#as_VT_P_2_2000
+:as_VT_P_2_2000 rdf:type owl:NamedIndividual ,
+                             :Agregacao ;
+                    :agregacaoCodigo "VT_P/2/2000" ;
+                    :agregacaoTitulo "VT_P/2/2000" ;
+                    :temNI :vc_naturezaIntervencao_participante ;
+                    :agregacaoDataContagem "VT_P/2/2000" .
+                    
+###  http://jcr.di.uminho.pt/m51-clav#as_VT_D_3_2000
+:as_VT_D_3_2000 rdf:type owl:NamedIndividual ,
+                             :Agregacao ;
+                    :agregacaoCodigo "VT_D/3/2000" ;
+                    :agregacaoTitulo "VT_D/3/2000" ;
+                    :temNI :vc_naturezaIntervencao_dono ;
+                    :agregacaoDataContagem "VT_D/3/2000" .
+                    
+###  http://jcr.di.uminho.pt/m51-clav#ae_2_DGLAB_2019
+:ae_2_DGLAB_2019 rdf:type owl:NamedIndividual ,
+                        :AutoEliminacao ;
+               :autoNumero "2/DGLAB/2019" ;
+               :autoDataAutenticacao "07/08/2019" ;
+               :temEntidadeResponsavel :ent_DGLAB ;
+               :autoResponsavel "Silvestre Lacerda" ;
+               :temLegislacao :leg_LGkeKP2Uiwt4i96Jt_XHG ;
+               :codigo "500.10.602" ;
+               :autoDataInicio "2000" ;
+               :autoDataFim "2013" ;
+               :temAgregacao :as_VT_D_1_2000 ;
+               :temAgregacao :as_VT_P_2_2000 ;
+               :temAgregacao :as_VT_D_3_2000 ;
+               :autoNumero "2/DGLAB/2019" .
+                
+###  http://jcr.di.uminho.pt/m51-clav#as_VT_D_1_2000
+:as_VT_D_1_2000 rdf:type owl:NamedIndividual ,
+                             :Agregacao ;
+                    :agregacaoCodigo "VT_D/1/2000" ;
+                    :agregacaoTitulo "VT_D/1/2000" ;
+                    :temNI :vc_naturezaIntervencao_dono ;
+                    :agregacaoDataContagem "VT_D/1/2000" .
+                    
+###  http://jcr.di.uminho.pt/m51-clav#as_VT_P_2_2000
+:as_VT_P_2_2000 rdf:type owl:NamedIndividual ,
+                             :Agregacao ;
+                    :agregacaoCodigo "VT_P/2/2000" ;
+                    :agregacaoTitulo "VT_P/2/2000" ;
+                    :temNI :vc_naturezaIntervencao_participante ;
+                    :agregacaoDataContagem "VT_P/2/2000" .
+                    
+###  http://jcr.di.uminho.pt/m51-clav#as_VT_D_3_2000
+:as_VT_D_3_2000 rdf:type owl:NamedIndividual ,
+                             :Agregacao ;
+                    :agregacaoCodigo "VT_D/3/2000" ;
+                    :agregacaoTitulo "VT_D/3/2000" ;
+                    :temNI :vc_naturezaIntervencao_dono ;
+                    :agregacaoDataContagem "VT_D/3/2000" .
+                    
+###  http://jcr.di.uminho.pt/m51-clav#ae_3_DGLAB_2019
+:ae_3_DGLAB_2019 rdf:type owl:NamedIndividual ,
+                        :AutoEliminacao ;
+               :autoNumero "3/DGLAB/2019" ;
+               :autoDataAutenticacao "07/08/2019" ;
+               :temEntidadeResponsavel :ent_DGLAB ;
+               :autoResponsavel "Silvestre Lacerda" ;
+               :temLegislacao :leg_LGkeKP2Uiwt4i96Jt_XHG ;
+               :codigo "500.10.602" ;
+               :autoDataInicio "2000" ;
+               :autoDataFim "2013" ;
+               :autoNumero "3/DGLAB/2019" .
+                
 ###  http://jcr.di.uminho.pt/m51-clav#ae_2_DGLAB_2019
 :ae_2_DGLAB_2019 rdf:type owl:NamedIndividual ,
                         :AutoEliminacao ;
