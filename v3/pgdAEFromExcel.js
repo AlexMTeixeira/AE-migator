@@ -33,23 +33,28 @@ workbook.xlsx.readFile(filename)
         var fonte = wb.getWorksheet(1).getRow(2).getCell(2).text;
         var fundo = wb.getWorksheet(1).getRow(3).getCell(2).text;
 
+        auto = {
+            numero: (index+1)+"_"+entidade+"_"+currentTime.getFullYear(),
+            dataAutenticacao: currentTime.getDate()+"/"+(currentTime.getMonth()+1)+"/"+currentTime.getFullYear(),
+            entidadeResponsavel: entidade,
+            legistacao: "Portaria "+fonte,
+            fundo: fundo,
+            zonaControlo: []
+        }
+
         var autos = wb.getWorksheet(2);
         autos.eachRow(function(row, rowNumber) {
             if(rowNumber > 1) {
                 //Formatação do array dos AE
                 index++;
                 index2 = -1;
-                aeCatalog[index] = {
-                    autoNumero: ":ae_"+(index+1)+"_"+entidade+"_"+currentTime.getFullYear(),
-                    autoDataAutenticacao: currentTime.getDate()+"/"+(currentTime.getMonth()+1)+"/"+currentTime.getFullYear(),
-                    temEntidadeResponsavel: entidade,
-                    temLegistacao: "Portaria "+fonte,
-                    fundo: fundo,
+                auto.zonaControlo.push({
                     codigo: row.getCell(1).text,
+                    referencia: row.getCell(2).text,
                     autoDataInicio: row.getCell(6).text,
                     autoDataFim: row.getCell(7).text,
                     agregacoes: []
-                }
+                })
                 var conservacao = row.getCell(4).value
                 var codigo = row.getCell(1).text
 
@@ -61,8 +66,8 @@ workbook.xlsx.readFile(filename)
                         var res = parseInt(conservacao) + parseInt(dataContagem)
                         if(res <= currentTime.getFullYear()) {
                             index2++;
-                            aeCatalog[index].agregacoes.push({
-                                agregacaoCodigo: ag.getCell(3).text,
+                            auto.zonaControlo[index].agregacoes.push({
+                                agregacaoCodigo: ag.getCell(3).text.replace(/[ -.,!/]/g,'_'),
                                 agregacaoTitulo: ag.getCell(4).text,
                                 agregacaoDataContagem: ag.getCell(5).text,
                                 temNI: ag.getCell(6).text
@@ -73,5 +78,5 @@ workbook.xlsx.readFile(filename)
             } 
         })
 
-        jf.writeFileSync(foutJSON, aeCatalog)
+        jf.writeFileSync(foutJSON, auto)
     })
